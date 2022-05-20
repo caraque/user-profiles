@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+import Profile from "./components/Profile";
+import {getProfiles} from "./services/profiles";
+import {Grid} from "@mui/material";
 
+let spacing = 12;
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [profiles, setProfiles] = useState([]);
+
+    useEffect(() => {
+        getProfiles().then(profiles => setProfiles(profiles.results));
+    }, [])
+
+    return (
+        <Grid container spacing={4} columns={{ xs: 4, sm: 8, md: 12 }} style={{ marginTop: 10, marginBottom: 30 }}>
+            {
+                profiles.map((profile: any) =>
+                    <Grid item xs={4}>
+                        <Profile key={profile.id.value} profile={profile}/>
+                    </Grid>
+                )
+            }
+        </Grid>
+    );
 }
 
 export default App;
