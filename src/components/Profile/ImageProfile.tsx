@@ -1,12 +1,12 @@
 import React from "react";
-import ProfileBackgroundImage from "./ProfileBackgroundImage";
+import BackgroundImageProfile from "./BackgroundImageProfile";
 import MainImage from "./MainImage";
 
 const ProfileImage = ({url}: { url: string }) => {
     return (
         <div id="profileImage" style={{ position: 'relative', left: 0, top: 0 }}>
             <div style={{ overflow: 'hidden', position: 'relative' }}>
-                <ProfileBackgroundImage url={url}/>
+                <BackgroundImageProfile url={url}/>
             </div>
             <div style={{
                 position: 'absolute',

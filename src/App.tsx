@@ -4,12 +4,14 @@ import Profile from "./components/Profile";
 import {getProfiles} from "./services/profiles";
 import {Grid} from "@mui/material";
 
-let spacing = 12;
 function App() {
     const [profiles, setProfiles] = useState([]);
 
     useEffect(() => {
-        getProfiles().then(profiles => setProfiles(profiles.results));
+        getProfiles().then(profiles => {
+            setProfiles(profiles.results)
+        });
+
     }, [])
 
     return (

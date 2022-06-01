@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProfileBackgroundImage = ({url}: { url: string }) => {
+const BackgroundImageProfile = ({url}: { url: string }) => {
     return <img
         alt="image-background-profile"
         src={url}
@@ -10,4 +10,4 @@ const ProfileBackgroundImage = ({url}: { url: string }) => {
         }} />
 };
 
-export default ProfileBackgroundImage;
+export default BackgroundImageProfile;
