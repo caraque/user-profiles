@@ -3,7 +3,7 @@
 
 This project is created to show a list of profiles using the *randomuser* api.
 
-API documentation: [https://randomuser.me/](https://randomuser.me/)
+API documentation: <a href="https://randomuser.me/" target="_blank">randomuser.me</a>
 
 Language: TypeScript
 
@@ -19,9 +19,11 @@ In the project directory, you can run the project locally using:
 
  * docker: `docker build -t user-profiles . && docker run -dp 3000:3000 user-profiles`
 
- * DEMO: [Click here](https://caraque.github.io/user-profiles/)
 
-finally you can access opening your favorite browser and navigate to [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ * DEMO: <a href="https://caraque.github.io/user-profiles" target="_blank">click here</a>
+
+finally you can access opening your favorite browser and navigate to
+<a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to view it in the browser.
 
 ## Notes:
 
