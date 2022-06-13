@@ -1,0 +1,16 @@
+#image-profile {
+  position: relative;
+  left: 0;
+  top: 0;
+
+  #bg-img-container {
+    overflow: hidden;
+    position: relative;
+  }
+
+  #main-img-container {
+    position: absolute;
+    width: 287px;
+    top: 70px;
+  }
+}

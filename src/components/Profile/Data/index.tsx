@@ -1,10 +1,10 @@
 import React from "react";
 import {Grid} from "@mui/material";
+import "./styles.scss";
 
-const Profile = ({profile}: { profile: any }) => {
+const Data = ({profile}: { profile: any }) => {
     return (
-
-        <Grid container spacing={2} style={{padding: 10}}>
+        <Grid container spacing={2} className="data-container">
             <Grid item xs={6}>
                 <div>Name:</div>
                 <div>
@@ -27,4 +27,4 @@ const Profile = ({profile}: { profile: any }) => {
     )
 };
 
-export default Profile;
+export default Data;

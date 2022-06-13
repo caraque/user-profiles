@@ -1,13 +1,14 @@
 import React from "react";
-import ImageProfile from "./ImageProfile";
-import { Card } from "@mui/material";
-import DataProfile from "./DataProfile";
+import ImageProfile from "./Image";
+import {Card} from "@mui/material";
+import Data from "./Data";
+import "./styles.scss";
 
 const Profile = ({profile}: { profile: any }) => {
     return (
-        <Card style={{width: 287, textAlign: 'center', margin: 'auto'}}>
-            <ImageProfile url={profile.picture.large} />
-            <DataProfile profile={profile} />
+        <Card id="profile-card">
+            <ImageProfile url={profile.picture.large}/>
+            <Data profile={profile}/>
         </Card>
     )
 };
