@@ -4,11 +4,11 @@ import {Card} from "@mui/material";
 import Data from "./Data";
 import "./styles.scss";
 
-const Profile = ({profile}: { profile: any }) => {
+const Profile = ({profile, isModal}: { profile: any, isModal?: boolean }) => {
     return (
         <Card id="profile-card">
-            <ImageProfile url={profile.picture.large}/>
-            <Data profile={profile}/>
+            <ImageProfile url={profile.imageUrl}/>
+            <Data profile={profile} isModal={isModal}/>
         </Card>
     )
 };

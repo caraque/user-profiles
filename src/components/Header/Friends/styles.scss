@@ -1,0 +1,31 @@
+.friend-container {
+  height: 120px;
+  background: white;
+
+
+  .friend-list {
+    height: 108px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+
+    .friend-item {
+      cursor: pointer;
+      max-width: 117px;
+    }
+  }
+
+  .friend-list::-webkit-scrollbar {
+    height: 7px;
+  }
+
+  .friend-list::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
+
+  .friend-list::-webkit-scrollbar-thumb {
+    background-color: #d4aa70;
+    border-radius: 100px;
+  }
+}
